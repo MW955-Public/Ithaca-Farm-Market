@@ -11,7 +11,7 @@
         <sui-card-description>You have {{this.stamp}} stamp(s)</sui-card-description>
       </sui-card-content>
       <sui-card-content id="card">
-        <Card :name='this.$route.params.VendorID' :stamp='this.stamp'></Card>
+        <Card :name='this.$route.params.VendorID' :stamp='this.stamp' :counter='this.counter'></Card>
       </sui-card-content>
     </sui-card>
     

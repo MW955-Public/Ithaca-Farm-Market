@@ -3,6 +3,8 @@
     <h1 :onclick="'window.location.replace(\'/CardExpandPage/' + encodeApostrophe(name) + '\')'">
     {{ name }}
     </h1>
+    <div class="counters" v-show='this.showCounters'>{{counter==0?"new":counter}}</div>
+    
     <div v-if="stamp==1" id="punchDisplay">
       <div id="sixRack">
         <div class="punch" id="punch1"></div>
@@ -68,6 +70,7 @@
     name: 'Card',
     props: {
       name: String,
+      counter:0,
 
       stamp: Number,
       farmKey: String,
@@ -81,6 +84,13 @@
         name = name.replace(/'/g, '%27');
         return name;
       },
+      showCounters(counters){
+        if (counters===0){
+          return false;
+        }else{
+          return true;
+        }
+      }
     }
     //   howManyPunches (punches){
     //     document.getElementById("punch1").style.display = "none";
@@ -212,6 +222,15 @@
     float:right;
     vertical-align: center;
     text-align: center;
+  }
+  .counters{
+    width: 20px;
+    height: 20px;
+    border-radius: 70%;
+    
+    float: right;
+    margin: -3px;
+    background-color: #f9faba;
   }
   .punch{
     width: 10px;

@@ -10,7 +10,7 @@
     </div>
     
     
-    <h1>This is a placeholder for a QR Scanner.</h1>
+    <h1>Please check-in by scanning the QR code</h1>
   </div>
 </template>
 
@@ -136,7 +136,7 @@ import collections from '@/assets/Collection.json'
            var temp_stamp=JSON.parse(localStorage.getItem(this.result)).stamp+1;
            var termp_counter=JSON.parse(localStorage.getItem(this.result)).counter;
            if(temp_stamp===7){
-             temp_stamp=0;
+             temp_stamp=1;
              termp_counter=termp_counter+1;
              }
             jsonData.name=this.result;

@@ -34,19 +34,17 @@
       </div>
       <!-- <div id="completedHuntsList"> -->
       <!-- <Card name="Peachy Farm" :stamp=1 />  -->
-      <Card name="Evergreen Farm" :stamp=4 />
+      <!-- <Card name="Evergreen Farm" :stamp=4 /> -->
       <!-- </div> -->
       <div v-for="vendor in loops" :key="vendor">
-        <Card :name="vendor.name" :stamp="vendor.stamp"></Card>
+        <Card :name="vendor.name" :stamp="vendor.stamp" :counter="vendor.counter"></Card>
       </div>
       </div>
-
-      
       <div id="header4">
         <h4> Featured <span></span> </h4>
       </div>
-      <Card name="Watercrest" :stamp=3 />
-      <Card name="Magnolia Ranch" :stamp=6 />
+      <Card name="Watercrest" :stamp=3 counter="1"/>
+      <Card name="Magnolia Ranch" :stamp=6 counter="2"/>
       <!-- <Card name="Jess's Flowers"/> -->
 
     </div>
@@ -96,6 +94,7 @@ export default {
       showCards: true,
       showRecipes: false,
       loops: [],
+      counter: Number
 
     }
   },
@@ -150,8 +149,9 @@ export default {
           this.stamp = farmStamp;
           // window.console.log("stamp: "+ this.stamp);
           
-          this.loops.push({name:farmKey, stamp:farmStamp});
-          window.console.log(this.loops);
+          this.loops.push({name:farmKey, stamp:farmStamp, counter:farmCounter});
+          
+          //window.console.log(this.loops);
           // window.console.log("farmStamp: "+ farmStamp);
           // farmObject.stamp = this.stamp + 1;
           // window.console.log("updated farmObject:" + farmObject);
@@ -175,7 +175,7 @@ export default {
 <style scoped>
   #completed {
     width: 100%;
-    margin-bottom: 120px;
+    
   }
 
   #achievementBadges {
@@ -197,6 +197,9 @@ export default {
     margin-bottom: 7px;
     border-bottom: 0.5px solid rgb(167, 167, 167);
     margin-right: 10px;
+    width: 100%;
+    float: left;
+    position: relative;
   }
 
   /* h4 span {
