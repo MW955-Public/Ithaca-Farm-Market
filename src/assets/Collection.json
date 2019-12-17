@@ -1,0 +1,82 @@
+[{
+    
+       "name":"A Farm",
+       "stamps":3,
+       "counter":1,
+       "id" : "123",
+       "photo": "peach.jpg"}    
+    ,
+    
+        {
+            
+            "name":"Magnolia Ranch",
+            "stamps":2,
+            "counter":3,
+            "id" : "345",
+        "photo": "ranch.jpg"}  
+    ,
+     
+        {
+            "name":"Watercrest",
+            "stamps":1,
+            "counter":3,
+            "id" : "567",
+        "photo": "water.jpg"}  
+    ,
+    
+        {
+            "name":"Evergreen Farm",
+            "stamps":5,
+            "counter":1,
+            "id" : "789",
+        "photo": "evergreen.jpg"}  
+    ,
+    
+        {
+            "name":"Bawk Bawk",
+            "stamps":1,
+            "counter":2,
+            "id" : "100",
+        "photo": "bawk.jpg"}
+        ,
+   
+        {
+            "name":"Mister Cheese",
+            "stamps":2,
+            "counter":1,
+            "id" : "999",
+        "photo" : "Mistercheese.jpg"}
+       ,
+    
+        {
+            "name":"Tropic Threads",
+            "stamps":3,
+            "counter":0,
+            "id" : "888",
+        "photo" : "Tropicthreads.jpg"}
+        ,
+    
+       {
+           
+        "name":"Frames by Frank",
+        "stamps":4,
+        "counter":0,
+        "id" : "777",
+       "photo" : "framesbyfrank.jpg"}
+       ,
+  
+       {
+        "name":"Ocean Breeze",
+        "stamps":3,
+        "counter":0,
+        "id" : "666",
+       "photo" : "oceanbreeze.jpg"}
+       ,
+  
+       {
+        "name":"Paradise Falls",
+        "stamps":2,
+        "counter":0,
+        "id" : "555",
+       "photo" : "paradisefall.jpg"}
+]

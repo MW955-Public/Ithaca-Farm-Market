@@ -1,0 +1,42 @@
+[{
+    "Peachy Farm": 
+      {
+       "id" : "123",
+       "photo": "peach.jpg"}    
+    ,
+    "Magnolia Ranch": 
+        {"id" : "345",
+        "photo": "ranch.jpg"}  
+    ,
+    "Watercrest": 
+        {"id" : "567",
+        "photo": "water.jpg"}  
+    ,
+    "Evergreen Farm": 
+        {"id" : "789",
+        "photo": "evergreen.jpg"}  
+    ,
+    "Bawk Bawk": 
+        {"id" : "100",
+        "photo": "bawk.jpg"}
+        ,
+    "Mister Cheese":
+        {"id" : "999",
+        "photo" : "Mistercheese.jpg"}
+       ,
+    "Tropic Threads":
+        {"id" : "888",
+        "photo" : "Tropicthreads.jpg"}
+        ,
+    "Frames by Frank":
+       {"id" : "777",
+       "photo" : "framesbyfrank.jpg"}
+       ,
+    "Ocean Breeze":
+       {"id" : "666",
+       "photo" : "oceanbreeze.jpg"}
+       ,
+    "Paradise Falls":
+       {"id" : "555",
+       "photo" : "paradisefall.jpg"}
+}]

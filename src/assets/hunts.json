@@ -1,0 +1,106 @@
+[{
+  "name": "Pesto & Goat Cheese Risotto",
+  "type": "recipe",
+  "image": "pesto-goat-cheese-risotto",
+  "ingredients": [  
+    {
+      "quantity": "2 tbsp",
+      "name": "Olive Oil",
+      "image": "olive-oil.jpg",
+      "vendors": ["Peachy Farm", "Magnolia Ranch"]     
+    },
+    {
+      "quantity": "200g",
+      "name": "Rice",
+      "image": "rice.jpg",
+      "vendors": ["Watercrest", "Peachy Farm", "Evergreen Farm"]
+    },
+    {
+      "quantity": "700ml",
+      "name": "Chicken Stock",
+      "image": "chicken-stock.jpg",
+      "vendors": ["Magnolia Ranch", "Watercrest", "Bawk Bawk"]
+    },
+    {
+      "quantity": "200g",
+      "name": "Pesto",
+      "image": "pesto.jpg",
+      "vendors": ["Evergreen Farm"]
+    },
+    {
+      "quantity": "100g",
+      "name": "Goat Cheese",
+      "image": "goat-cheese.jpg",
+      "vendors": ["Evergreen Farm", "Bawk Bawk"]
+    }
+  ],
+  "instructions": [
+    "Pour olive oil into saucepan.",
+    "Fry the rice for one minute.",
+    "Add half the stock and cook until absorbed.",
+    "Add the remaining stock until the rice is cooked (about 20-25 minutes).",
+    "Stir in the pesto and half of the goat cheese.",
+    "Serve topped with the rest of the cheese."
+  ]
+},
+
+{
+  "name": "Cozy Cheesy Mash",
+  "type": "diy",
+  "image": "cozy-cheese-mash",
+  "ingredients": [  
+    {
+      "name": "Mac & Cheese",
+      "image": "mac-and-cheese.png",
+      "vendors": ["Mister Cheese", "Watercrest"]    
+    },
+    {
+      "name": "Baguette",
+      "image": "baguette.png",
+      "vendors": ["Peachy Farm", "Evergreen Farm"]
+    },
+    {
+      "name": "Apple Cider",
+      "image": "apple-cider.jpg",
+      "vendors": ["Magnolia Ranch"]
+    }
+  ],
+  "instructions": [
+    "Break the baguette into tiny pieces.",
+    "Dip the bread pieces into the mac & cheese.",
+    "Enjoy with yummy apple cider!"
+  ]
+},
+
+{
+  "name": "Tropical Chic",
+  "type": "product",
+  "image": "tropical-chic",
+  "ingredients": [  
+    {
+      "name": "Hawaiian Top",
+      "image": "hawaiian-top.jpg",
+      "vendors": ["Tropic Threads", "Ocean Breeze"]    
+    },
+    {
+      "name": "Wide Pants",
+      "image": "wide-pants.jpg",
+      "vendors": ["Ocean Breeze"]
+    },
+    {
+      "name": "Tinted Sunglasses",
+      "image": "sunglasses.jpg",
+      "vendors": ["Tropic Threads", "Frames by Frank"]
+    },
+    {
+      "name": "Silk Bandana",
+      "image": "bandana.jpg",
+      "vendors": ["Ocean Breeze", "Paradise Falls"]
+    }
+  ],
+  "instructions": [
+    "Tie the bandana around your neck like a scarf.",
+    "Rest sunglasses on top of head.",
+    "Pair with the top and pants, and you have a great tropical outfit!"
+  ]
+}]
