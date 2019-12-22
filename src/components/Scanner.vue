@@ -3,14 +3,12 @@
   <div class="Scanner">
     
     <div>
-    <p class="decode-result">Last result: <b>{{ result }}</b></p>
+    <!-- <p class="decode-result">Last result: <b>{{ result }}</b></p> -->
 
     
     <qrcode-stream @decode="onDecode" @init="onInit" />
     </div>
     
-    
-    <h1>Please check-in by scanning the QR code</h1>
   </div>
 </template>
 
@@ -191,8 +189,8 @@ import collections from '@/assets/Collection.json'
 
 <style scoped>
   .Scanner {
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
     margin: 40px 40px 40px 40px;
 
   }

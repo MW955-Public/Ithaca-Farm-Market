@@ -19,11 +19,13 @@
 <style scoped>
   .Achievement {
     /* border-style: solid; */
-    width: 100px;
+    width: 106px;
   }
   .Badge {
     width: 50px;
     height: 50px;
+    margin-top: 20%;
+    margin-bottom: 10%;
   }
   #badgeTitle{
     font-size: 8px;
@@ -35,7 +37,7 @@
     height: 50px;
   }
   #badgeTitle{
-    font-size: 8px;
+    font-size: 9pt;
     font-weight: bold;
     margin-top: -10px;
   }

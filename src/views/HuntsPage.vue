@@ -56,6 +56,11 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (max-height: 700px) {
+  .HuntsPage {
+    padding-bottom: 550px;
+  }
+}
   p {
     float: right;
     text-align: right;

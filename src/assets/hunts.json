@@ -45,6 +45,38 @@
 },
 
 {
+  "name": "Potato Soup",
+  "type": "recipe",
+  "image": "potato-soup",
+  "ingredients": [  
+    {
+      "quantity": "450g",
+      "name": "Potatoes",
+      "image": "potato.jpg",
+      "vendors": ["Peachy Farm", "Magnolia Ranch"]     
+    },
+    {
+      "quantity": "300g",
+      "name": "Onions",
+      "image": "onion.jpg",
+      "vendors": ["Magnolia Ranch", "Evergreen Farm"]
+    },
+    {
+      "quantity": "700ml",
+      "name": "Veggie Stock",
+      "image": "vegetable-stock.jpg",
+      "vendors": ["Magnolia Ranch", "Bawk Bawk"]
+    }
+  ],
+  "instructions": [
+    "Pour the vegetable stock into a large pot and bring to a boil.",
+    "Add the potato and onion and cover.",
+    "Turn the heat down to medium, and cook for 20 minutes.",
+    "Season to taste and serve."
+  ]
+},
+
+{
   "name": "Cozy Cheesy Mash",
   "type": "diy",
   "image": "cozy-cheese-mash",
@@ -69,6 +101,28 @@
     "Break the baguette into tiny pieces.",
     "Dip the bread pieces into the mac & cheese.",
     "Enjoy with yummy apple cider!"
+  ]
+},
+
+{
+  "name": "Ice Cream Mocha",
+  "type": "diy",
+  "image": "ice-cream-mocha",
+  "ingredients": [  
+    {
+      "name": "Vanilla Ice Cream",
+      "image": "ice-cream.jpg",
+      "vendors": ["Peachy Farm", "Magnolia Ranch"]    
+    },
+    {
+      "name": "Toasted Mocha",
+      "image": "mocha.png",
+      "vendors": ["Evergreen Farm"]
+    }
+  ],
+  "instructions": [
+    "Pour toasted mocha onto ice cream.",
+    "Enjoy your coffee infused ice cream!"
   ]
 },
 
@@ -102,5 +156,27 @@
     "Tie the bandana around your neck like a scarf.",
     "Rest sunglasses on top of head.",
     "Pair with the top and pants, and you have a great tropical outfit!"
+  ]
+},
+
+{
+  "name": "Farmer Tan",
+  "type": "product",
+  "image": "farmer-tan",
+  "ingredients": [  
+    {
+      "name": "Overalls",
+      "image": "overalls.jpg",
+      "vendors": ["Ocean Breeze"]
+    },
+    {
+      "name": "Straw Hat",
+      "image": "straw-hat.jpg",
+      "vendors": ["Paradise Falls"]
+    }
+  ],
+  "instructions": [
+    "Place straw hat on top of head.",
+    "Pair with overalls and now you have a farmer's outfit!"
   ]
 }]

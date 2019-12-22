@@ -11,7 +11,7 @@
           <h1>{{$route.params.ItemID}}</h1>
   
           <router-link id="button" :to="{path: '/ScanPage/'+$route.params.ItemID}"> 
-            <button class="ui button">Scan</button>
+            <button class="ui button"> <img id="qr-code" src="../images/qrcode-icon.png"/> <p> Scan Vendor </p> </button>
           </router-link> 
           </div>
           </div>
@@ -76,6 +76,14 @@ export default {
 #button {
   float: left;
 }
+#qr-code {
+  width: 20px;
+  display: flex;
+}
+p {
+  display: flex;
+  padding-left: 8px;
+}
 #layout{
   display:flex;
   flex-direction: row;
@@ -106,6 +114,8 @@ export default {
   background-color: rgb(112, 176, 230);
   color: white;
   font-weight: 900;
+  flex-direction: row;
+  display: flex;
 }
 #button:hover {
   color: pink;

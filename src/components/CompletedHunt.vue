@@ -4,17 +4,23 @@
     {{ name }}
     </h1>
   </div> -->
+  
 
-  <router-link class="CompletedHunt" :to="{path: '/RecipePage/' + encodeApostrophe(name)}">
-    <h1>{{ name }}</h1>
+  <router-link class="CompletedHunt" :to="{path: '/RecipePage/' + encodeApostrophe(name)}" 
+  v-bind:style="{backgroundImage: 'url('+ require('../images/hunts/' + image + '.jpg') +')', backgroundSize: '100%'}">
+    <h1> {{ name }} </h1>
+    <!-- <div class="counters">{{counter}}</div>  -->
   </router-link>
+  
 </template>
 
 <script>
   export default {
     name: 'CompletedHunt',
     props: {
-      name: String
+      name: String,
+      image: String,
+      counter: 0,
     },
      methods: {
       encodeApostrophe (name){
@@ -34,7 +40,7 @@
     margin-right: 2.5%;
     float: left;
     height: 100px;
-    background-color: #c9c7db;
+    /* background-color: #c9c7db; */
     margin-bottom: 10px;
   }
   h3 {
@@ -59,5 +65,15 @@
     font-size: 18px;
     font-weight: 600;
     /* margin-top: 30%; */
+  }
+  .counters{
+    width: 20px;
+    height: 20px;
+    border-radius: 70%;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    float: right;
+    margin: -3px;
+    background-color: #ffffff;
   }
 </style>

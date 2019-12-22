@@ -7,7 +7,7 @@
           <img class="icon" src="../assets/badges/icon1.png" alt="icon">
         </td>
         <td>
-          Level 4 in Ally's Farm
+          Level {{level}} in {{vendorName}}
         </td>
       </tr>
       <tr>
@@ -15,7 +15,7 @@
           <img class="icon" src="../assets/badges/icon2.png" alt="icon2">
         </td>
         <td>
-          Completed 23 punch cards in total
+          Completed {{counter}} punch cards in total
         </td>
       </tr>
       <tr>
@@ -33,9 +33,70 @@
 <script>
   export default {
     name: 'CollectionsHeader',
-    props: {
-      name: String
+    data: function(){
+    return {
+      
+      counter: Number,
+      vendorName:String,
+      level:0,
+      
+
     }
+  },
+    props: {
+      name: String,
+      
+      
+    },
+    
+    methods:{
+      loadInfo(){
+        var vendor;
+        var maxCard=0;
+        var everyCount=0;
+        var venName ="";
+        
+       // window.console.log("localStorage: " + localStorage);
+      for (vendor in localStorage){
+        var tmp = localStorage.getItem(vendor);
+        var trash = localStorage.getItem("loglevel:webpack-dev-server");
+        
+        // window.console.log(tmp);
+        // window.console.log(typeof(tmp));
+        if(tmp != null && tmp != trash && JSON.parse(tmp).name!=""){
+          //window.console.log("farmKey: "+ vendor);
+          var farmObject = JSON.parse(tmp);
+          // window.console.log(localStorage.getItem(farmKey))
+
+          var farmCounter = farmObject["counter"];
+          window.console.log(maxCard);
+          if( farmCounter > maxCard){
+            maxCard=farmCounter;
+            venName=farmObject.name;
+            
+          }
+          everyCount = everyCount+farmCounter;
+          // window.console.log("this.counter: "+ this.counter);
+          // window.console.log("farmCounter: "+ farmCounter);
+
+          
+          
+
+        }
+      }
+      this.counter=everyCount;
+      this.vendorName=venName;
+      this.level=maxCard;
+        
+
+
+      }
+
+    },
+    mounted: function(){
+      this.loadInfo();
+    }
+    
   }
 </script>
 
@@ -44,7 +105,7 @@
     text-align: left;
   }
   h1 {
-    padding-top: 47px;
+    padding-top: 30px;
     border-bottom: 0.5px solid lightgrey;
     padding-left: 12px;
     margin-left: 12px;

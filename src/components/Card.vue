@@ -1,13 +1,19 @@
 <template>
-  <div class="Card" :onclick="'window.location.replace(\'/CardExpandPage/' +  encodeApostrophe(name) + '\')'">
-    <h1 :onclick="'window.location.replace(\'/CardExpandPage/' + encodeApostrophe(name) + '\')'">
+  <router-link class="Card" :to="{path: '/CardExpandPage/' +  encodeApostrophe(name)}">
+    <h1>
+    <!-- <h1 :onclick="'window.location.replace(\'/CardExpandPage/' + encodeApostrophe(name) + '\')'"> -->
     {{ name }}
     </h1>
-    <div class="counters" v-show='this.showCounters'>{{counter==0?"new":counter}}</div>
+    <div class="counters">{{counter}}</div>
     
     <div v-if="stamp==1" id="punchDisplay">
       <div id="sixRack">
         <div class="punch" id="punch1"></div>
+        <div class="punchMargin" id="punch2"></div>
+        <div class="punchMargin" id="punch3"></div>
+        <div class="punchMargin" id="punch4"></div>
+        <div class="punchMargin" id="punch5"></div>
+        <div class="punchMargin" id="punch6"></div>
       </div>
     </div>
 
@@ -15,6 +21,10 @@
       <div id="sixRack">
         <div class="punch" id="punch1"></div>
         <div class="punch" id="punch2"></div>
+        <div class="punchMargin" id="punch3"></div>
+        <div class="punchMargin" id="punch4"></div>
+        <div class="punchMargin" id="punch5"></div>
+        <div class="punchMargin" id="punch6"></div>
       </div>
     </div>
 
@@ -23,6 +33,9 @@
         <div class="punch" id="punch1"></div>
         <div class="punch" id="punch2"></div>
         <div class="punch" id="punch3"></div>
+        <div class="punchMargin" id="punch4"></div>
+        <div class="punchMargin" id="punch5"></div>
+        <div class="punchMargin" id="punch6"></div>
       </div>
     </div>
 
@@ -32,6 +45,8 @@
         <div class="punch" id="punch2"></div>
         <div class="punch" id="punch3"></div>
         <div class="punch" id="punch4"></div>
+        <div class="punchMargin" id="punch5"></div>
+        <div class="punchMargin" id="punch6"></div>
       </div>
     </div>
 
@@ -42,6 +57,7 @@
         <div class="punch" id="punch3"></div>
         <div class="punch" id="punch4"></div>
         <div class="punch" id="punch5"></div>
+        <div class="punchMargin" id="punch6"></div>
       </div>
     </div>
 
@@ -62,7 +78,7 @@
       </div>
     </div> -->
 
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -70,7 +86,7 @@
     name: 'Card',
     props: {
       name: String,
-      counter:0,
+      counter: 0,
 
       stamp: Number,
       farmKey: String,
@@ -189,23 +205,15 @@
     margin-right: 2.5%;
     float: left;
     height: 100px;
-    background-color: #c9c7db;
+    background-color: #faeace;
     margin-bottom: 10px;
-    min-width: 150px;
+    min-width: 144px;
   }
   h3 {
     margin: 40px 0 0;
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
   a {
-    color: #42b983;
+    color: rgb(34, 34, 34);
   }
   h1 {
     width: 60%;
@@ -227,10 +235,11 @@
     width: 20px;
     height: 20px;
     border-radius: 70%;
-    
+    font-weight: bold;
+    color: rgb(68, 68, 68);
     float: right;
     margin: -3px;
-    background-color: #f9faba;
+    background-color: #ffffff;
   }
   .punch{
     width: 10px;
@@ -240,6 +249,16 @@
     float: left;
     margin: 2px;
     background-color: #5b5c75;
+  }
+  .punchMargin{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+    border: 1px solid rgb(95, 95, 95);
+    float: left;
+    margin: 2px;
+    
   }
 
   #sixRack {

@@ -47,7 +47,7 @@ export default {
     return {
      
       name:"",
-      stamp:"",
+      stamp:0,
       counter:""
     }
   },
@@ -56,9 +56,10 @@ export default {
       this.counter=JSON.parse(localStorage.getItem(this.$route.params.VendorID)).counter;
       this.stamp=JSON.parse(localStorage.getItem(this.$route.params.VendorID)).stamp;
       this.name=this.$route.params.VendorID;
+      
     },
     back () {
-      window.history.go(-2)
+      window.history.back()
     }
   }
   
